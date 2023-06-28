@@ -1,25 +1,15 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
-int main() {
-    int p;
-    int d0;
-    int d1;
-    int soma;
+int main()
+{
+    float cap_cabin;
+    float alun;
+    float calc_viagem;
+    cin >> cap_cabin;
+    cin >> alun;
+    calc_viagem = ceil (alun / (cap_cabin - 1));
+    cout << calc_viagem << endl;
     
-    cin >> p >> d0 >> d1;
-    soma = (d0 + d1) % 2;
-    
-    if ( p == 0 && soma == 0)
-    {
-        cout << "0\n";
-    }
-    else if ( p == 1 && soma == 1)
-    {
-        cout << "0\n";
-    }
-    else
-    {
-        cout << "1\n";
-    }
 }
